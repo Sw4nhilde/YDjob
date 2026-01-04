@@ -50,4 +50,4 @@ To run this project locally, you need to configure Firebase and Cloudinary.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/YDJob.git](https://github.com/yourusername/YDJob.git)
+git clone https://github.com/Sw4nhilde/YDjob
