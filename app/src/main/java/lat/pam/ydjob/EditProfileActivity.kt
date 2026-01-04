@@ -72,9 +72,9 @@ class EditProfileActivity : AppCompatActivity() {
     private fun initCloudinary() {
         try {
             val config = HashMap<String, String>()
-            config["cloud_name"] = "ds3pu1pzg"
-            config["api_key"] = "451762242968852"
-            config["api_secret"] = "y3U9E0tpVL6RosTrCmpGC9XB0BI"
+            config["cloud_name"] = "........"
+            config["api_key"] = ".........."
+            config["api_secret"] = "......."
             MediaManager.init(this, config)
         } catch (e: Exception) {
         }
