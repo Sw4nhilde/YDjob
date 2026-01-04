@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "975814184816",
+    "project_id": "ydjob-8b345",
+    "storage_bucket": "ydjob-8b345.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975814184816:android:9c7a52b0cb327b6cc549b5",
+        "android_client_info": {
+          "package_name": "lat.pam.ydjob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABCbpnap487n-zNgmU07ca0ahxZXQ07kA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

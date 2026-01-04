@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple_primary"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post New Job"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="@color/white"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView android:text="Job Title" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_search_rounded"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:hint="e.g. Senior Android Dev"/>
+
+            <TextView android:text="Job Type" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etJobType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_search_rounded"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Full Time / Remote / Contract"/>
+
+            <TextView android:text="Location" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etJobLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_search_rounded"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Medan, Indonesia"/>
+
+            <TextView android:text="Salary (Min - Max)" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+                <EditText
+                    android:id="@+id/etSalaryMin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:background="@drawable/bg_search_rounded"
+                    android:paddingHorizontal="16dp"
+                    android:hint="Min"
+                    android:layout_marginEnd="8dp"/>
+                <EditText
+                    android:id="@+id/etSalaryMax"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:background="@drawable/bg_search_rounded"
+                    android:paddingHorizontal="16dp"
+                    android:hint="Max"/>
+            </LinearLayout>
+
+            <TextView android:text="Job Description" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/etJobDesc"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_search_rounded"
+                android:padding="16dp"
+                android:gravity="top"
+                android:layout_marginBottom="24dp"
+                android:hint="Explain the role requirements..."/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPostJob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Post Job Now"
+                android:textStyle="bold"
+                android:backgroundTint="@color/purple_primary"
+                app:cornerRadius="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
